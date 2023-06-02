@@ -49,7 +49,7 @@ jobs:
           # Generate latex documentation
           enable-latex: true # optional
           # Extra alpine packages for the build environment
-          additional-packages: font-fira-code # optional, default is 
+          # additional-packages: font-fira-code # optional, default is 
 
   # Deployment job
   deploy:
