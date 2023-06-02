@@ -38,7 +38,8 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
       - name: Doxygen Action
-      # You may pin to the exact commit or the version.
+      # Doxygen No 1: You may pin to the exact commit or the version.
+      # Not sure about how to deploy the output from this action
       # uses: mattnotmitt/doxygen-action@411df0c62acb5b96b8a93d93a7bf4b753c47ea05
         uses: mattnotmitt/doxygen-action@1.9.5
         with:
@@ -62,7 +63,7 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
-
+      # Doxygen No 2: deployment through a gh pages branch
       - name: Deploy Doxygen to gh pages
         uses: DenverCoder1/doxygen-github-pages-action@v1.3.0
         with:
