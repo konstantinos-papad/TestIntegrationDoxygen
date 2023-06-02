@@ -43,7 +43,7 @@ jobs:
         uses: mattnotmitt/doxygen-action@1.9.5
         with:
           # Path to Doxyfile
-          doxyfile-path: Doxygen/Doxyfile # default is ./Doxyfile
+          doxyfile-path: ../Doxygen/Doxyfile # default is ./Doxyfile
           # Working directory
           working-directory: source # default is .
           # Generate latex documentation
