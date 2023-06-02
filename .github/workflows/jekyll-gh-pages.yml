@@ -44,7 +44,7 @@ jobs:
         uses: mattnotmitt/doxygen-action@1.9.5
         with:
           # Path to Doxyfile
-          doxyfile-path: ../Doxygen/Doxyfile # default is ./Doxyfile
+          doxyfile-path: ./Doxygen/Doxyfile # default is ./Doxyfile
           # Working directory
           working-directory: source # default is .
           # Generate latex documentation
@@ -69,5 +69,5 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: gh-pages
-          folder: ./../Doxygen/html
-          config_file: ./../Doxygen/Doxyfile
+          folder: ./Doxygen/html
+          config_file: ./Doxygen/Doxyfile
